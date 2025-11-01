@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
+    
+    <!-- SEO & Meta Tags -->
+    <title>Biozilla – Best Instagram Bios, Quotes & Captions</title>
+    <meta name="description" content="Discover the perfect Instagram bios, shayari, love quotes, fun facts, and social media captions. Biozilla is your ultimate source for creative content." />
+    <meta name="keywords" content="" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.biozilla.app/" />
+    <meta property="og:title" content="Biozilla – Best Instagram Bios, Quotes & Captions" />
+    <meta property="og:description" content="Discover the perfect Instagram bios, shayari, love quotes, fun facts, and social media captions. Biozilla is your ultimate source for creative content." />
+    <meta property="og:image" content="https://placehold.co/1200x630/7c3aed/ffffff?text=Biozilla" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://www.biozilla.app/" />
+    <meta property="twitter:title" content="Biozilla – Best Instagram Bios, Quotes & Captions" />
+    <meta property="twitter:description" content="Discover the perfect Instagram bios, shayari, love quotes, fun facts, and social media captions. Biozilla is your ultimate source for creative content." />
+    <meta property="twitter:image" content="https://placehold.co/1200x630/7c3aed/ffffff?text=Biozilla" />
+
+    <!-- Schema.org JSON-LD Markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "Biozilla",
+      "url": "https://www.biozilla.app/",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "https://www.biozilla.app/#search?q={search_term_string}",
+        "query-input": "required name=search_term_string"
+      },
+      "publisher": {
+        "@type": "Organization",
+        "name": "Biozilla",
+        "url": "https://www.biozilla.app/",
+        "logo": {
+          "@type": "ImageObject",
+          "url": "https://placehold.co/200x200/7c3aed/ffffff?text=B"
+        }
+      }
+    }
+    </script>
+    
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+      body {
+        font-family: 'Inter', sans-serif;
+      }
+      /* UPDATED: Changed keyframes for a left-to-right scroll effect */
+      @keyframes gradient-scroll {
+        0% { background-position: 0% 50%; }
+        100% { background-position: 100% 50%; }
+      }
+      .animate-gradient {
+        background-size: 200% 200%;
+        /* UPDATED: Changed animation to be a linear scroll, faster and more visible */
+        animation: gradient-scroll 2s linear infinite;
+      }
+      /* ADDED: Animation for category boxes */
+      @keyframes fade-in-up {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      .animate-category-in {
+        animation: fade-in-up 0.5s ease-out forwards;
+      }
+      /* ADDED: Keyframes for rotating gradient border (used by categories) */
+      @keyframes rotate-border {
+        to {
+          transform: rotate(360deg);
+        }
+      }
+      
+      /* ADDED: Keyframes and class for the content card border animation on interaction */
+      @keyframes rotate-card-border-once {
+        from {
+          transform: rotate(0deg);
+          opacity: 1;
+        }
+        to {
+          transform: rotate(360deg);
+          opacity: 0;
+        }
+      }
+      .animate-card-border-flow {
+        animation: rotate-card-border-once 1.2s ease-out;
+      }
+
+      /* ADDED: Styles to deter screenshots via printing */
+      @media print {
+        body {
+          /* Ensures custom styles apply in print preview */
+          -webkit-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+        .no-print {
+          /* Hides elements like buttons during print */
+          display: none !important;
+        }
+        .secure-content {
+          position: relative;
+          /* Prevents pseudo-element from spilling out */
+          overflow: hidden;
+        }
+        .secure-content::after {
+          /* This pseudo-element creates the overlay */
+          content: '';
+          position: absolute;
+          inset: 0;
+          /* A blurred, hatched pattern to obscure text */
+          background: linear-gradient(45deg, rgba(0,0,0,0.4) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.4) 75%),
+                      linear-gradient(45deg, rgba(0,0,0,0.4) 25%, transparent 25%, transparent 75%, rgba(0,0,0,0.4) 75%);
+          background-size: 20px 20px;
+          background-position: 0 0, 10px 10px;
+          backdrop-filter: blur(4px);
+        }
+      }
+
+    </style>
+    <script>
+      // IIFE to set theme from localStorage or system preference to prevent FOUC
+      (function() {
+          const theme = localStorage.getItem('theme');
+          const systemIsDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+          
+          if (theme === 'dark' || (!theme && systemIsDark)) {
+              document.documentElement.classList.add('dark');
+          } else {
+              document.documentElement.classList.remove('dark');
+          }
+      })();
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "firebase/": "https://aistudiocdn.com/firebase@^12.4.0/"
+  }
+}
+</script>
+</head>
+  <body class="bg-gray-50 dark:bg-gray-900 transition-colors duration-300">
+    <div id="root">
+       <style>
+            .initial-loader {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 100vh;
+                background-color: #f9fafb;
+            }
+            .dark .initial-loader {
+                background-color: #111827;
+            }
+            .initial-loader-spinner {
+                width: 3rem;
+                height: 3rem;
+                border: 4px solid #d1d5db;
+                border-top-color: #8B5CF6;
+                border-radius: 50%;
+                animation: spin 1s linear infinite;
+            }
+            @keyframes spin { to { transform: rotate(360deg); } }
+        </style>
+        <div class="initial-loader">
+            <div class="initial-loader-spinner"></div>
+        </div>
+    </div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
